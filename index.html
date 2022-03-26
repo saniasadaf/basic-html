@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html long="en">
+    <head>
+       <link rel = "stylesheet" href="style.css"/>
+        <title>Practice</title>
+        <script src="script.js"></script>
+    </head>
+    <body>
+         <div class = "parent">
+            <div class = "child">1</div>
+            <div class = "child">2</div>
+            <div class = "child">3</div>
+             <div class ="child">4</div>
+             <div class ="child">5</div>
+             <div class ="child">6</div>
+             <h1 class="heading" id="heading">Learning Dom</h1>
+             <p class="heading1">this is para</p>
+             <button class="button">change text</button>
+        </div> 
+                <header>
+        <h1>welcome</h1>
+        <p>have a great day</p>
+        </header>
+
+        <header>
+            <p> <b> Radio buttons</b></p>
+                <form>
+                    <input type = "radio" id="html" name="numb" value="one">
+                    <label for="one">One</label><br>
+                    <input type="radio" id="html" name="numb" value="one">
+                   <label for ="one">Two</label><br>
+                   <input type="radio" id="html" name ="numb" value="one">
+                   <label for ="one">Three</label><br>
+                </form>
+                        
+                <br>
+                <br>
+                <br>
+                <p><b>check box</b></p>
+              
+                <label class="container">One
+                    <input type="checkbox" id="checked">
+                </label><br>
+                <span class="checkmark"></span>
+
+                <label class="container">two
+                    <input type="checkbox" id="checked"><br>
+                    <label class="box">three</label>
+                    <input type="checkbox" id="box">
+                    <span class="checkbox"></span>
+                </label>
+                
+<br><br>
+<!-- <time> -->
+<form>
+    <label for=" oppt">selecttime</label>
+    <input type="time" id="oppt" name="oppt">
+    <input type="submit">
+</form><br>
+<!-- <date> -->
+<form>
+    <label for=" birthday"> birthday</label>
+    <input type="date" id="birth" name="birth">
+    <input type="submit">
+</form><br>
+<!-- <date time> -->
+<form>
+    <label for="birthday">Birthday</label>
+    <input type="datetime-local" id="birthday" name="birth">
+    <button>submit</button>
+    </form>
+<!-- <!select> -->
+    <form>
+        <label for="cars">choose car</label>
+        <select name="cars" id ="cars">
+        <optgroup label="swedish cars">
+            <option value="volvo">volvo</option>
+        </optgroup>
+        <optgroup label="grmen cars">
+            <option value="audi">audi</option>
+        </optgroup>
+    </select>
+    <button>submit</button>
+    </form><br>
+
+
+    <!-- <onblur>-->
+      
+            
+        
+        <label for="name">enter your name</label>
+        <input type="text" name="frame" id="form" onblur="myFunction()">
+
+        <script>
+            function myFunction(){
+                var x= document.getElementById("frame");
+            }
+        </script><br>
+       
+            Enter your name: <input type="text" id="myInput" onfocus="focusFunction()" onblur="blurFunction()">
+
+<script>
+function focusFunction() {
+  // Focus = Changes the background color of input to yellow
+  document.getElementById("myInput").style.background = "yellow";
+}
+
+function blurFunction() {
+  // No focus = Changes the background color of input to red
+  document.getElementById("myInput").style.background = "red";
+}
+</script><br>
+Enter some text: <input type="text" name="txt" value="Hello" onchange="myFunction(this.value)">
+
+<script>
+function myFunction(val) {
+  alert("The input value has changed. The new value is: " + val);
+}
+</script> -->
+    
+
+        </body>
+</html>
+

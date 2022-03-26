@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent{
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+.child{
+    background-color: aquamarine;
+    height: 150px;
+    width: 100px;
+    margin: 5px;
+    
+}
+.parent{
+    background-color: brown;
+    height: 60vh;
+    position: relative;
+}
+.button{
+    height: 50px;
+    width: 50px;
+}
+#heading{
+ color: aliceblue;
+}
+.heading1{
+    color: aliceblue;
+}
